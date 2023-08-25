@@ -29,10 +29,16 @@
 }
 
 body {
-	display: grid;
+	background-color: var(--bg);
+	color: var(--fg);
 	place-items: center;
-	min-height: 100vh;
+	display: flex;
+	font: 1em/1.5 sans-serif;
+	height: 100vh;
 	font-family:  'Google Sans', sans-serif, system-ui;
+	transition:
+		background-color var(--trans-dur),
+		color var(--trans-dur);
 }
 
 :root {
